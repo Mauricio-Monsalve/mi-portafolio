@@ -1,0 +1,45 @@
+.About {
+  display: flex;
+  width: 100%;
+  max-width: 45rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+.About .separador {
+  display: flex;
+  gap: 2rem;
+}
+
+.About .separador > img {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.About .separador .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.About .separador .info strong {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.About .separador .info p {
+  font-size: .8rem;
+}
+
+@media screen and (orientation: portrait) {
+  .About .separador {
+    flex-direction: column-reverse;
+  }
+  .About .separador .info {
+    align-items: center;
+  }
+}
