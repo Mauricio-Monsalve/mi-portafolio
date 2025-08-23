@@ -8,6 +8,7 @@ import Training from "../pages/Training.jsx";
 import Projects from "../pages/Projects.jsx";
 import "../styles/App.css";
 import AnimationProvider from "../contexts/AnimationContext.jsx";
+import Contact from "../pages/Contact.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/skills" element={<Skills/>}/>
           <Route path="/training" element={<Training/>}/>
           <Route path="/projects" element={<Projects/>}/>
+          <Route path="/contact" element={<Contact/>}/>
           <Route path="/projects/pokeapi" element={<PokeApi/>}/>
           <Route path="/projects/pokeapi/:id" element={<PokeCard/>}/>
         </Routes>

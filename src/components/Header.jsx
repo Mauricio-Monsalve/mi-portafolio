@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <header className="Header">
-      <img src="https://placehold.co/500" alt="Logo" />
+      <img src="/mi-portafolio/images/logo.png" alt="Logo" />
       <nav>
         <ul>
           <li>
@@ -36,6 +36,9 @@ function Header() {
           </li>
           <li>
             <a href="#" onClick={(e)=>navigateHandler(e,"/projects")}>Projects</a>
+          </li>
+          <li>
+            <a href="#" onClick={(e)=>navigateHandler(e,"/contact")}>Contact</a>
           </li>
         </ul>
       </nav>

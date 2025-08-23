@@ -5,26 +5,63 @@
   align-items: center;
   background-color: #222;
   border-radius: 1rem;
-  gap: 1rem;
   margin: 1rem;
-  padding: 1rem;
   width: 10rem;
   aspect-ratio: 9/16;
+  overflow: hidden;
   transition: transform .3s ease, border .3s ease;
 }
 
 .ProjectCard:hover {
-  transform: scale(1.1);
-  border: 1px solid var(--primary);
+  transform: scale(1.03);
+  outline: 1px solid var(--primary);
 }
 
 .ProjectCard img {
-  width: 80%;
-  aspect-ratio: 1;
+  width: 100%;
+  aspect-ratio: 16/9;
   object-fit: cover;
 }
 
 .ProjectCard strong {
   text-align: center;
   color: var(--primary);
+  padding: 0rem 1rem;
+}
+
+.ProjectCard p {
+  font-size: .8rem;
+  padding: 0rem 1rem;
+}
+
+.ProjectCard .btn-separator {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  width: 100%;
+  gap: .5rem;
+}
+
+.ProjectCard button {
+  width: 100%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  color: white;
+}
+
+.ProjectCard button:nth-child(even) {
+  background-color: var(--primary);
+}
+
+.ProjectCard a {
+  text-decoration: none;
+  color: white;
+}
+
+.ProjectCard button:nth-child(even) a {
+  background-color: var(--primary);
+  color: black;
 }

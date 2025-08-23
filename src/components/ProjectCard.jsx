@@ -1,15 +1,21 @@
 import "../styles/ProjectCard.css"
 
-function ProjectCard({institucion, titulo, inicio, finalizacion}) {
+function ProjectCard({nombre, descripcion, foto, deploy, codigo}) {
   return (
     <div className="ProjectCard">
-      <img src={institucion} alt="Formacion" />
-      <strong>{titulo}</strong>
+      <img src={foto} alt="Formacion" />
+      <strong>{nombre}</strong>
       <p>
-        <span>{inicio} </span>
-        -
-        <span> {finalizacion}</span>
+        {descripcion}
       </p>
+      <div className="btn-separator">
+        <button type="button">
+          <a href={deploy} target="_blank">DEMO</a>
+        </button>
+        <button type="button">
+          <a href={codigo} target="_blank">REPO</a>
+        </button>
+      </div>
     </div>
   )
 }

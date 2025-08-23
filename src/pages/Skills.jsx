@@ -10,7 +10,7 @@ function Skills() {
           {datos.skills.habilidades.map((skill,index)=>{
             return (
               <div className="skill-container" key={index}>
-                <img src={skill.icono} alt={skill.nombre} />
+                <img src={skill.icono} alt={skill.nombre} style={{filter: skill.nombre == "Express JS" ? "invert()" : "none"}}/>
                 <span>{skill.nombre}</span>
               </div>
             );

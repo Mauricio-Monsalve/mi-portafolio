@@ -122,10 +122,45 @@ export const datos = {
   projects: [
     {
       nombre: "El Ahorcado",
-      descripcion: "Un juego en el que el jugador tiene que adivinar una palabra oculta dentro de un número limitado de intentos. El jugador contrario selecciona la palabra, y el jugador principal perderá cuando el banco se ruede completamente.",
+      descripcion: "Un juego en el que el jugador tiene que adivinar una palabra oculta dentro de un número limitado de intentos.",
+      foto: "/mi-portafolio/images/projects/ahorcado.webp",
+      linkDeploy: "https://mauricio-monsalve.github.io/Juego-Ahorcado/",
+      linkCodigo: "https://github.com/Mauricio-Monsalve/Juego-Ahorcado"
+    },
+    {
+      nombre: "Trello clone",
+      descripcion: "Un aplicativo simple que busca replicar el funcionamiento de la plataforma de notas Trello.",
+      foto: "/mi-portafolio/images/projects/trello.webp",
+      linkDeploy: "https://mauricio-monsalve.github.io/Proyecto-Trello/",
+      linkCodigo: "https://github.com/Mauricio-Monsalve/Proyecto-Trello"
+    },
+    {
+      nombre: "Tiendita",
+      descripcion: "Aplicativo simple utilizado para consumir una API de Railway sobre comida",
       foto: "https://placehold.co/200",
       linkDeploy: "#",
       linkCodigo: "#"
-    }
+    },
+    {
+      nombre: "Fruity Soda Bush",
+      descripcion: "Landing page simple animada, que hace uso de efectos animaciones para simular efectos 3D.",
+      foto: "/mi-portafolio/images/projects/soda.webp",
+      linkDeploy: "https://mauricio-monsalve.github.io/Fruity-Soda-Bush/",
+      linkCodigo: "https://github.com/Mauricio-Monsalve/Fruity-Soda-Bush"
+    },
+    {
+      nombre: "PockEt Commerce",
+      descripcion: "E-commerce simple, que hace uso de localStorage como sistema principal de cuentas.",
+      foto: "/mi-portafolio/images/projects/pocket.webp",
+      linkDeploy: "https://pock-et-commerce.vercel.app",
+      linkCodigo: "https://github.com/Mauricio-Monsalve/PockEtCommerce"
+    },
+    {
+      nombre: "TaskList",
+      descripcion: "Aplicativo Full Stack para guardar tareas pendientes, completarlas, eliminarlas o copiarlas. Guardando la informacion en MongoDB.",
+      foto: "/mi-portafolio/images/projects/tasklist.webp",
+      linkDeploy: "https://mauricio-monsalve.github.io/TaskList-front",
+      linkCodigo: "https://github.com/Mauricio-Monsalve/TaskList-front"
+    },
   ]
 };

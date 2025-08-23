@@ -10,10 +10,10 @@ function Projects() {
 
   const leftHandler = () => {
     //si ya llegue a limite izquierdo
-    if(view % datos.training.formacion.length == 0
+    if(view % datos.projects.length == 0
       || view == 0
     ) {
-      const moverMas = view + datos.training.formacion.length;
+      const moverMas = view + datos.projects.length;
 
       refMov.current.style.left = `${moverMas * -12}rem`
     }
@@ -23,7 +23,7 @@ function Projects() {
   const rightHandler = () => {
     //si ya llegue a limite derecho
     //voy hasta el inicio
-    if(view % datos.training.formacion.length == 0) {
+    if(view % datos.projects.length == 0) {
       refMov.current.style.left = `${view * -12}rem`
     }
     setView(view - 1);
@@ -36,23 +36,25 @@ function Projects() {
         <div className="mov-container" ref={refMov} style={
           {
             transform: `translateX(${view*12}rem)`,
-            width: `${(datos.training.formacion.length + 3) * 12}rem`,
+            width: `${(datos.projects.length + 3) * 12}rem`,
             left: "0rem"
           }}>
-          {datos.training.formacion.map((formacion, index)=>{
+          {datos.projects.map((proyecto, index)=>{
             return <ProjectCard
-              institucion={formacion.foto}
-              titulo={formacion.nombre}
-              inicio={formacion.inicio}
-              finalizacion={formacion.termino}
+              nombre={proyecto.nombre}
+              descripcion={proyecto.descripcion}
+              foto={proyecto.foto}
+              deploy={proyecto.linkDeploy}
+              codigo={proyecto.linkCodigo}
               key={index}/>
           })}
-          {datos.training.formacion.map((formacion, index)=>{
+          {datos.projects.map((proyecto, index)=>{
             if(index < 3) return <ProjectCard
-              institucion={formacion.foto}
-              titulo={formacion.nombre}
-              inicio={formacion.inicio}
-              finalizacion={formacion.termino}
+              nombre={proyecto.nombre}
+              descripcion={proyecto.descripcion}
+              foto={proyecto.foto}
+              deploy={proyecto.linkDeploy}
+              codigo={proyecto.linkCodigo}
               key={index}/>
           })}
         </div>
